@@ -14,6 +14,7 @@ function sum (a,b){ //eslint-disable-line
 
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
+
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
@@ -87,10 +88,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  var multi = multiply(testArray[0],testArray[1])[0];
+  var multiplication = multiply(multi,testArray[2])[0];
+  var array =[multiplication, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and '+multiplication+' is their sum.'];
+  return array;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(2,3,4);
+testMultiplyArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
