@@ -25,7 +25,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
   var multiply = a * b;
-  var array = [sum,'The sum of '+a+' and '+b+' is '+multiply];
+  var array = [multiply,'The sum of '+a+' and '+b+' is '+multiply];
   return array;
 }
 
@@ -43,8 +43,11 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+function sumAndMultiply(a,b,c){
+  var sum = a + b + c;
+  var multiply = a * b * c;
+  var array = [sum, multiply, a+' and '+b+' and '+c +' sum to '+sum, 'The product of '+a+' and '+b+' and '+c+' is '+multiply];
+  return array; //eslint-disable-line
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
