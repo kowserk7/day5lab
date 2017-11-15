@@ -6,9 +6,9 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum (a,b){ //eslint-disable-line
+function sum (a,b) { //eslint-disable-line
   var sum = a + b;
-  var array = [sum,'The sum of '+a+' and '+b+' is '+sum];
+  var array = [sum,'The sum of ' + a + ' and ' + b + ' is ' + sum + '.'];
   return array;
 }
 
@@ -26,7 +26,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
   var multiply = a * b;
-  var array = [multiply,'The sum of '+a+' and '+b+' is '+multiply];
+  var array = [multiply,'The product of ' + a + ' and ' + b + ' is ' + multiply + '.'];
   return array;
 }
 
@@ -46,8 +46,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a,b,c){
   var add = sum(sum(a,b)[0],c)[0];
-  var multi= multiply(multiply(a,b)[0],c)[0];
-  var array = [add, multi, a+' and '+b+' and '+c +' sum to '+add+'.', 'The product of '+a+' and '+b+' and '+c+' is '+multi+'.'];
+  var multi = multiply(multiply(a,b)[0],c)[0];
+  var array = [add, multi, a + ' and ' + b + ' and ' + c + ' sum to ' + add + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + multi + '.'];
   return array; //eslint-disable-line
 }
 
@@ -69,7 +69,7 @@ var testArray = [2,3,4]; //eslint-disable-line
 function sumArray(testArray){ //eslint-disable-line
   var add = sum(testArray[0],testArray[1])[0];
   var addition = sum(add,testArray[2])[0];
-  var array =[addition, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and '+addition+' is their sum.'];
+  var array = [addition, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + addition + ' is their sum.'];
   return array;
 }
 
@@ -89,8 +89,8 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
   var multi = multiply(testArray[0],testArray[1])[0];
-  var multiplication = multiply(multi,testArray[2])[0];
-  var array =[multiplication, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and '+multiplication+' is their sum.'];
+  var multiplication = multiply(multi, testArray[2])[0];
+  var array = [multiplication,'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + multiplication + '.'];
   return array;
 }
 
